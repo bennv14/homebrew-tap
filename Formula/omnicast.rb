@@ -5,20 +5,20 @@
 class Omnicast < Formula
   desc "Omnicast - Multi-platform social media distribution and management CLI"
   homepage "https://github.com/bennv14/homebrew-tap"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.1.0/omnicast_0.1.0_darwin_amd64.tar.gz"
-      sha256 "cd897571556fdb8f78adc71c2cf3119da513fe62ad563bef2406faa5aff8257d"
+      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.2.0/omnicast_0.2.0_darwin_amd64.tar.gz"
+      sha256 "720775db2a5a85e875d498d905bcb62b27b30ba2e5b08490a90cb36ecbf702cf"
 
       define_method(:install) do
         bin.install "omnicast"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.1.0/omnicast_0.1.0_darwin_arm64.tar.gz"
-      sha256 "be604be06b3f4024de601b878a74dade6326f904e04773127be706b50ef2c509"
+      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.2.0/omnicast_0.2.0_darwin_arm64.tar.gz"
+      sha256 "57a0d3a3800bad9bc6465434447afde69e2aff75e1980fca2c7d8669a1387efb"
 
       define_method(:install) do
         bin.install "omnicast"
@@ -28,15 +28,15 @@ class Omnicast < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.1.0/omnicast_0.1.0_linux_amd64.tar.gz"
-      sha256 "7d7537d033f3f9b9ae8b39f68ff15347ebb0f9eccdee64c50ab8d18fedf4def4"
+      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.2.0/omnicast_0.2.0_linux_amd64.tar.gz"
+      sha256 "7b80d72ff7e9b776512fe3bb535d5aa893c85e683d1fbcbcfce87f5169a75bcb"
       define_method(:install) do
         bin.install "omnicast"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.1.0/omnicast_0.1.0_linux_arm64.tar.gz"
-      sha256 "1367fbafd46471fafc57bd3e533c3a89e741f4490429b1623bba4887fe806bf1"
+      url "https://github.com/bennv14/homebrew-tap/releases/download/v0.2.0/omnicast_0.2.0_linux_arm64.tar.gz"
+      sha256 "a8c11a0b78ba4428ba9618a187961d66929350ffc4a700d7c15fd3440c41c65c"
       define_method(:install) do
         bin.install "omnicast"
       end
